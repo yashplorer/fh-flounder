@@ -97,3 +97,59 @@ article {
 		}
 	}
 }
+section {
+	@extend article;
+	> header {
+		text-align: center;
+		margin-bottom: 40px;
+		display: block;
+		span {
+			font-family: ".SFNSDisplay-Regular", HelveticaNeue, LucidaGrande, Helvetica, sans-serif; 
+			font-size: 15pt;
+			letter-spacing: 2px;
+			margin-bottom: 15px;
+			font-weight: normal;
+			text-transform: uppercase;
+		}
+	}
+	> div {
+		ul {
+			li {
+				list-style: none;
+				> span {
+					font-family: "Baskerville", Times, serif;
+					font-style: italic;
+					font-weight: 600;
+					font-size: 20pt;
+					
+					margin-bottom: 5px;
+					display: block;
+					a {
+						text-decoration: none;
+						color: black;
+					}
+					a:hover {
+						text-decoration: underline;
+						color: black;
+					}
+				}
+				> div {
+					font-family: 'Baskerville', Georgia, times, serif;
+					font-size: 10pt;
+
+					//author
+					span:nth-child(1){
+						font-weight: bold;
+						letter-spacing: 0.5px;
+					}
+
+					//date
+					span:nth-child(2){
+						font-weight: normal;
+						margin-left: 20px;
+					}
+				}
+			}
+		}
+	}
+}

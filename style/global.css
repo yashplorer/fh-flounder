@@ -33,18 +33,18 @@ nav {
         padding-right: 25px;
         text-align: center; }
 
-article {
+article, section {
   width: 700px;
   margin-top: 50px;
   margin-left: auto;
   margin-right: auto; }
-  article header div:nth-child(1) {
+  article header div:nth-child(1), section header div:nth-child(1) {
     font-family: ".SFNSDisplay-Regular", HelveticaNeue, LucidaGrande, Helvetica, sans-serif;
     font-size: 10pt;
     letter-spacing: 1px;
     margin-bottom: 15px;
     font-weight: bold; }
-  article header div:nth-child(2) {
+  article header div:nth-child(2), section header div:nth-child(2) {
     font-family: "Baskerville", Times, serif;
     font-style: italic;
     font-weight: 600;
@@ -52,21 +52,57 @@ article {
     padding-bottom: 10px;
     margin-bottom: 20px;
     border-bottom: solid #DDD thin; }
-  article header div:nth-child(3) {
+  article header div:nth-child(3), section header div:nth-child(3) {
     font-family: 'Baskerville', Georgia, times, serif;
     font-size: 10pt; }
-    article header div:nth-child(3) span:nth-child(1) {
+    article header div:nth-child(3) span:nth-child(1), section header div:nth-child(3) span:nth-child(1) {
       font-weight: bold;
       letter-spacing: 0.5px; }
-    article header div:nth-child(3) span:nth-child(2) {
+    article header div:nth-child(3) span:nth-child(2), section header div:nth-child(3) span:nth-child(2) {
       font-weight: normal;
       margin-left: 20px; }
-  article #content {
+  article #content, section #content {
     font-family: "Baskerville", Georgia, serif;
     font-size: 14pt;
     line-height: 1.8;
     font-weight: normal; }
-    article #content p {
+    article #content p, section #content p {
       margin-bottom: 2em; }
+
+section > header {
+  text-align: center;
+  margin-bottom: 40px;
+  display: block; }
+  section > header span {
+    font-family: ".SFNSDisplay-Regular", HelveticaNeue, LucidaGrande, Helvetica, sans-serif;
+    font-size: 15pt;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    font-weight: normal;
+    text-transform: uppercase; }
+section > div ul li {
+  list-style: none; }
+  section > div ul li > span {
+    font-family: "Baskerville", Times, serif;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 20pt;
+    margin-bottom: 5px;
+    display: block; }
+    section > div ul li > span a {
+      text-decoration: none;
+      color: black; }
+    section > div ul li > span a:hover {
+      text-decoration: underline;
+      color: black; }
+  section > div ul li > div {
+    font-family: 'Baskerville', Georgia, times, serif;
+    font-size: 10pt; }
+    section > div ul li > div span:nth-child(1) {
+      font-weight: bold;
+      letter-spacing: 0.5px; }
+    section > div ul li > div span:nth-child(2) {
+      font-weight: normal;
+      margin-left: 20px; }
 
 /*# sourceMappingURL=global.css.map */
