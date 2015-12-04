@@ -12,11 +12,11 @@ function readSection(inp){
 		for(j in doc) doc[j] = doc[j].replace(";", ",");
 
 		var f = "";
-		if(!(document.getElementById("article-list").innerHTML).includes(doc[0])){
+		if(!(((document.getElementById("article-list")).innerHTML).includes(toTitleCase(doc[0])))){
 			f += "<li>"
 				f += "<span>"
 					f += "<a href='" + doc[3] + "/index.html'>";
-					f += doc[0]; 
+					f += toTitleCase(doc[0]); 
 				f += "</a></span>";
 				f += "<div>"
 					f += "<span> By " + (doc[1]).toUpperCase() + "</span>";
