@@ -15,7 +15,7 @@ function readArticle(inp){
 	arr = inp.split('\n');
 	r.section = (arr[0]).toUpperCase();
 	r.title = toTitleCase(arr[1]);
-	r.auth = "By" + (arr[2]).toUpperCase();
+	r.auth = "By " + (arr[2]).toUpperCase();
 	r.date = arr[3];
 
 	r.content = "<p>";
