@@ -9,13 +9,22 @@
 			<header>The Foothill Flounder</header>
 			<hr>
 			<div id="nav-div">
-				<a href="../world/index.html"><span>World</span></a>
-				<a href="../us/index.html"><span>U.S.</span></a>
-				<a href="../sports/index.html"><span>Sports</span></a>
-				<a href="../arts/index.html"><span>Arts & Entertainment</span></a>
-				<a href="../lifestyle/index.html"><span>Lifestyle</span></a>
+				<a href="world/index.html"><span>World</span></a>
+				<a href="us/index.html"><span>U.S.</span></a>
+				<a href="sports/index.html"><span>Sports</span></a>
+				<a href="arts/index.html"><span>Arts & Entertainment</span></a>
+				<a href="lifestyle/index.html"><span>Lifestyle</span></a>
 			</div>
 		</nav>
+		<center id="ad"></center>
 	</body>
 	<script type="text/javascript" src="global.js"></script>
+	<script type="text/javascript">
+		(function() {
+			var max = 3;
+			var r = Math.floor(Math.random() * (max - 0) + 1);
+			console.log(r);
+			document.getElementById('ad').innerHTML = "<img style='margin-top: 100px;' width=500 src='ads/" + (r.toString().length < 2 ? "0" + r : r) + ".jpg' />";
+		})();
+	</script>
 </html>
