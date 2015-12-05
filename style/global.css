@@ -61,13 +61,21 @@ article, section {
     article header div:nth-child(3) span:nth-child(2), section header div:nth-child(3) span:nth-child(2) {
       font-weight: normal;
       margin-left: 20px; }
-  article #content, section #content {
+  article #content, section #content, article #sources p, section #sources p {
     font-family: "Baskerville", Georgia, serif;
     font-size: 14pt;
     line-height: 1.8;
     font-weight: normal; }
-    article #content p, section #content p {
+    article #content p, section #content p, article #sources p p, section #sources p p {
       margin-bottom: 2em; }
+  article #sources p, section #sources p {
+    color: black;
+    font-size: 11pt; }
+    article #sources p a, section #sources p a {
+      color: black;
+      text-decoration: none; }
+    article #sources p a:hover, section #sources p a:hover {
+      text-decoration: underline; }
 
 section > header {
   text-align: center;
