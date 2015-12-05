@@ -30,4 +30,6 @@ function readArticle(inp){
 	document.getElementById("auth").innerHTML = r.auth;
 	document.getElementById("date").innerHTML = r.date;
 	document.getElementById("content").innerHTML = r.content;
+	if(!((document.getElementsByTagName('article')[0].innerHTML).includes("01.jpg")))
+		document.getElementsByTagName('article')[0].innerHTML += "<img src='01.jpg' width='700' onerror='imgError(this)'/>"
 }
